@@ -208,27 +208,3 @@ body {
         margin-bottom: 20px;
     }
 }
-
-.panel-default > .panel-heading {
-    background-color: #131516;
-    color: #d7e2e9;
-    border-color: #131516;
-}
-
-.panel-default > .panel-heading a {
-    color: #5bc0de;
-    text-decoration: none;
-}
-
-.panel-default > .panel-heading a:hover {
-    color: #ffffff;
-}
-
-.panel-default > .panel-body {
-    background-color: #131516;
-    color: #ffffff;
-}
-
-.panel-default > .panel-body img {
-    margin-bottom: 15px;
-}
