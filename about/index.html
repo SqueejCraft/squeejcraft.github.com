@@ -46,7 +46,15 @@
                         <li><a href="http://map.squeejcraft.com:53974/"><i class="fa fa-globe"></i> Map</a></li>
                         <li><a href="/vote"><i class="fa fa-check-square-o"></i> Vote</a></li>
                         <li><a href="/comingsoon"><i class="fa fa-shopping-cart"></i> Shop</a></li>
-                        <li><a href="https://discord.gg/gPBzE7rTS9"><i class="fa fa-comments"></i> Discord</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-share-alt"></i> Socials <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="https://www.instagram.com/squeejcraft"><i class="fa fa-instagram"></i> Instagram</a></li>
+                                <li><a href="https://www.reddit.com/user/squeejcraft/"><i class="fa fa-reddit"></i> Reddit</a></li>
+                                <li><a href="https://twitter.com/SqueejC"><i class="fa fa-twitter"></i> Twitter</a></li>
+                                <li><a href="https://discord.gg/gPBzE7rTS9"><i class="fa fa-comments"></i> Discord</a></li>
+                            </ul>
+                        </li>
                     </ul>
                     <a class="btn btn-info navbar-btn navbar-right hidden-sm hidden-xs">IP: SqueejCraft.com</a>
                 </div>
@@ -61,29 +69,49 @@
             <div class="col-md-12">
                 <h1>About SqueejCraft</h1>
                 <p>Welcome to SqueejCraft! We are dedicated to providing a high-quality Minecraft server experience while maintaining the vanilla lifestyle.</p>
-                <div class="social-buttons">
-                    <a href="https://www.instagram.com/squeejcraft" class="btn btn-info"><i class="fa fa-instagram"></i> Instagram</a>
-                    <a href="https://www.reddit.com/user/squeejcraft/" class="btn btn-danger"><i class="fa fa-reddit"></i> Reddit</a>
-                    <a href="https://twitter.com/SqueejC" class="btn btn-primary"><i class="fa fa-twitter"></i> Twitter</a>
-                </div>
+                <!-- Removed social buttons -->
             </div>
         </div>
         <div class="row">
             <div class="col-md-4">
-                <img class="img-circle img-border" src="../img/marketing/1.jpg" height="150" width="150" alt="About Image 1">
-                <h2>Our Mission</h2>
-                <p>Our mission is to create a fun and engaging environment for all players. We focus on server quality and performance.</p>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2 class="panel-title"><a data-toggle="collapse" href="#mission">Our Mission</a></h2>
+                    </div>
+                    <div id="mission" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <img class="img-responsive" src="../img/marketing/1.jpg" alt="Our Mission">
+                            <p>Our mission is to create a fun and engaging environment for all players. We focus on server quality and performance.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="col-md-4">
-                <img class="img-circle img-border" src="../img/marketing/2.jpg" height="150" width="150" alt="About Image 2">
-                <h2>Our Team</h2>
-                <p>Meet our dedicated team of staff members who work tirelessly to ensure the best experience for our players.</p>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2 class="panel-title"><a data-toggle="collapse" href="#team">Our Team</a></h2>
+                    </div>
+                    <div id="team" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <img class="img-responsive" src="../img/marketing/2.jpg" alt="Our Team">
+                            <p>Meet our dedicated team of staff members who work tirelessly to ensure the best experience for our players.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="col-md-4">
-                <img class="img-circle img-border" src="../img/marketing/3.jpg" height="150" width="150" alt="About Image 3">
-                <h2>Join Us</h2>
-                <p>Join our community on Discord and stay updated with the latest news and events.</p>
-                <a href="https://discord.gg/gPBzE7rTS9" class="btn btn-primary"><i class="fa fa-comments"></i> Join Discord</a>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2 class="panel-title"><a data-toggle="collapse" href="#join">Join Us</a></h2>
+                    </div>
+                    <div id="join" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <img class="img-responsive" src="../img/marketing/3.jpg" alt="Join Us">
+                            <p>Join our community on Discord and stay updated with the latest news and events.</p>
+                            <a href="https://discord.gg/gPBzE7rTS9" class="btn btn-primary"><i class="fa fa-comments"></i> Join Discord</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="row">
