@@ -15,6 +15,10 @@ body {
     color: white;
 }
 
+.well {
+    color: #000;
+}
+
 .jumbotron {
     background-color: transparent;
   }
@@ -137,7 +141,7 @@ body {
 
 /* SHOP PAGE */
 .productbox {
-    background-color: #181A1B;
+    background-color: #ffffff;
     padding: 10px;
     margin-bottom: 10px;
     -webkit-box-shadow: 0 8px 6px -6px  #999;
