@@ -37,6 +37,33 @@ body {
     color: #e5dbdb;
 }
 
+.navbar-default .navbar-nav > .dropdown > a {
+    color: #d7e2e9;
+}
+
+.navbar-default .navbar-nav > .dropdown > a:hover, 
+.navbar-default .navbar-nav > .dropdown > a:focus, 
+.navbar-default .navbar-nav > .dropdown > a:active {
+    color: #e5dbdb;
+    background-color: #131516;
+}
+
+.navbar-default .navbar-nav > .dropdown-menu {
+    background-color: #131516;
+    border-color: #131516;
+}
+
+.navbar-default .navbar-nav > .dropdown-menu > li > a {
+    color: #d7e2e9;
+}
+
+.navbar-default .navbar-nav > .dropdown-menu > li > a:hover, 
+.navbar-default .navbar-nav > .dropdown-menu > li > a:focus, 
+.navbar-default .navbar-nav > .dropdown-menu > li > a:active {
+    color: #e5dbdb;
+    background-color: #131516;
+}
+
 .navbar-wrapper {
     position: absolute;
     top: 0;
