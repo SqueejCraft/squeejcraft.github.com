@@ -73,6 +73,10 @@ body {
     display: block;
 }
 
+.dropdown-hover:hover .dropdown-menu {
+    display: block;
+}
+
 .accent {
     color: #5bc0de !important;
     display: inline;
