@@ -7,9 +7,8 @@ body, p, a {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Lato', sans-serif;
-
-
 }
+
 body {
     background-color: #131516;
     color: white;
@@ -22,26 +21,20 @@ body {
 
 .jumbotron {
     background-color: transparent;
-  }
-  .navbar-default {
- 
+}
+
+.navbar-default {
     background-color: #131516;
-   
     border-color: #131516;
-   
-  }
-   
-  .navbar-default .navbar-brand {
-   
+}
+
+.navbar-default .navbar-brand {
     color: #d7e2e9;
-   
-  }
-   
-  .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-   
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
     color: #e5dbdb;
-   
-  }
+}
 
 .navbar-wrapper {
     position: absolute;
@@ -65,7 +58,6 @@ body {
     color: #5bc0de !important;
     display: inline;
 }
-
 
 /* HOME PAGE */
 .bg-container {
@@ -133,12 +125,10 @@ body {
     margin-left: 10px;
 }
 
-
 /* PLAY PAGE */
 .play-servertitle {
-    margin-top: 10px
+    margin-top: 10px;
 }
-
 
 /* SHOP PAGE */
 .productbox {
@@ -169,7 +159,6 @@ body {
     font-size: 33px;
     margin-bottom: 0px;
 }
-
 
 /* STAFF PAGE */
 .staff-img:hover {
