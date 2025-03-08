@@ -11,11 +11,12 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 body {
-    background-color: #181A1B;
+    background-color: #131516;
     color: white;
 }
 
 .well {
+    background-color: #2C2F33; 
     color: #000;
 }
 
