@@ -12,6 +12,7 @@ h1, h2, h3, h4, h5, h6 {
 body {
     background-color: #131516;
     color: white;
+    padding-top: 70px; /* Adjust this value if needed */
 }
 
 .well {
@@ -41,7 +42,7 @@ body {
     top: 0;
     right: 0;
     left: 0;
-    z-index: 20;
+    z-index: 1000; /* Ensure navbar is above other content */
 }
 
 .navbar-wrapper .container {
