@@ -213,3 +213,9 @@ body {
         margin-bottom: 20px;
     }
 }
+
+/* IP Input Boxes */
+.navbar-btn {
+    font-size: 12px; /* Smaller text */
+    padding: 5px 10px; /* Smaller box */
+}
