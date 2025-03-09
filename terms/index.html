@@ -55,9 +55,8 @@
                             </ul>
                         </li>
                     </ul>
-                    <a class="btn btn-info navbar-btn navbar-right hidden-sm hidden-xs">IP: SqueejCraft.com</a>
-                    </ul>
-                    <a class="btn btn-info navbar-btn navbar-right hidden-sm hidden-xs">IP: SqueejCraft.com</a>
+                    <a class="btn btn-info navbar-btn navbar-right hidden-sm hidden-xs" id="copyJava" onclick="copyToClipboard('squeejcraft.com')">Java: squeejcraft.com</a>
+                    <a class="btn btn-info navbar-btn navbar-right hidden-sm hidden-xs" id="copyBedrock" style="margin-right: 10px;" onclick="copyToClipboard('172.93.103.228:25565')">Bedrock: 172.93.103.228:25565</a>
                 </div>
             </div>
         </div>
@@ -218,6 +217,32 @@
 </script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript">
 </script>
-</body>
 
+<!-- Clickable IP addresses -->
+<script type="text/javascript">
+    function copyToClipboard(text) {
+        navigator.clipboard.writeText(text).then(function() {
+            showCopyMessage();
+        }, function(err) {
+            console.error('Could not copy text: ', err);
+        });
+    }
+
+    function showCopyMessage() {
+        var message = document.createElement('div');
+        message.innerText = 'Copied!';
+        message.style.position = 'fixed';
+        message.style.bottom = '10px';
+        message.style.right = '10px';
+        message.style.backgroundColor = '#5cb85c';
+        message.style.color = 'white';
+        message.style.padding = '10px';
+        message.style.borderRadius = '5px';
+        document.body.appendChild(message);
+        setTimeout(function() {
+            document.body.removeChild(message);
+        }, 10000);
+    }
+</script>
+</body>
 </html>
