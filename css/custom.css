@@ -219,3 +219,22 @@ body {
     font-size: 12px; /* Smaller text */
     padding: 5px 10px; /* Smaller box */
 }
+
+/* Slideshow images */
+.carousel-inner > .item > img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none;
+    color: #5bc0de;
+}
+
+.carousel-indicators li {
+    background-color: #5bc0de;
+}
+
+.carousel-indicators .active {
+    background-color: #ffffff;
+}
