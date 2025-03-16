@@ -190,6 +190,10 @@ body {
     color: white;
 }
 
+.list-group-item {
+    background-color: #131516;
+}
+
 /* STAFF PAGE */
 .staff-img:hover {
     -webkit-box-shadow: 0px 0px 20px 5px #000;
