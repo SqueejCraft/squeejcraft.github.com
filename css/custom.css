@@ -180,12 +180,18 @@ body {
     margin-bottom: 0px;
 }
 
+/* BACKGROUND BOXES */
 .modal-content {
     background-color: #131516;
     color: white;
 }
 
 .panel-info, .panel-success, .panel-danger {
+    background-color: #131516;
+    color: white;
+}
+
+.panel-footer {
     background-color: #131516;
     color: white;
 }
