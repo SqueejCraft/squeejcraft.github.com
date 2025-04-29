@@ -171,11 +171,28 @@
     <!-- Clickable IP addresses -->
     <script type="text/javascript">
         function copyToClipboard(text) {
-            navigator.clipboard.writeText(text).then(function() {
-                showCopyMessage();
-            }, function(err) {
-                console.error('Could not copy text: ', err);
-            });
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(text).then(function() {
+                    showCopyMessage();
+                }, function(err) {
+                    console.error('Could not copy text: ', err);
+                });
+            } else {
+                // Fallback for older browsers
+                var textarea = document.createElement('textarea');
+                textarea.value = text;
+                textarea.style.position = 'fixed'; // Prevent scrolling to bottom
+                document.body.appendChild(textarea);
+                textarea.focus();
+                textarea.select();
+                try {
+                    document.execCommand('copy');
+                    showCopyMessage();
+                } catch (err) {
+                    console.error('Fallback: Could not copy text: ', err);
+                }
+                document.body.removeChild(textarea);
+            }
         }
 
         function showCopyMessage() {

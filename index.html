@@ -141,31 +141,48 @@
             });
         </script>
 
-        <!-- Clickable IP addresses -->
-        <script type="text/javascript">
-            function copyToClipboard(text) {
-                navigator.clipboard.writeText(text).then(function () {
+    <!-- Clickable IP addresses -->
+    <script type="text/javascript">
+        function copyToClipboard(text) {
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(text).then(function() {
                     showCopyMessage();
-                }, function (err) {
+                }, function(err) {
                     console.error('Could not copy text: ', err);
                 });
+            } else {
+                // Fallback for older browsers
+                var textarea = document.createElement('textarea');
+                textarea.value = text;
+                textarea.style.position = 'fixed'; // Prevent scrolling to bottom
+                document.body.appendChild(textarea);
+                textarea.focus();
+                textarea.select();
+                try {
+                    document.execCommand('copy');
+                    showCopyMessage();
+                } catch (err) {
+                    console.error('Fallback: Could not copy text: ', err);
+                }
+                document.body.removeChild(textarea);
             }
+        }
 
-            function showCopyMessage() {
-                var message = document.createElement('div');
-                message.innerText = 'Copied!';
-                message.style.position = 'fixed';
-                message.style.bottom = '10px';
-                message.style.right = '10px';
-                message.style.backgroundColor = '#5cb85c';
-                message.style.color = 'white';
-                message.style.padding = '10px';
-                message.style.borderRadius = '5px';
-                document.body.appendChild(message);
-                setTimeout(function () {
-                    document.body.removeChild(message);
-                }, 10000);
-            }
-        </script>
+        function showCopyMessage() {
+            var message = document.createElement('div');
+            message.innerText = 'Copied!';
+            message.style.position = 'fixed';
+            message.style.bottom = '10px';
+            message.style.right = '10px';
+            message.style.backgroundColor = '#5cb85c';
+            message.style.color = 'white';
+            message.style.padding = '10px';
+            message.style.borderRadius = '5px';
+            document.body.appendChild(message);
+            setTimeout(function() {
+                document.body.removeChild(message);
+            }, 10000);
+        }
+    </script>
 </body>
 </html>
